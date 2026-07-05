@@ -1,0 +1,6 @@
+[
+  { "id": "projects", "label": "已服务创业项目", "value": 128, "suffix": "+" },
+  { "id": "domains", "label": "已分配二级域名", "value": 156, "suffix": "+" },
+  { "id": "spaces", "label": "已开通托管空间", "value": 98, "suffix": "+" },
+  { "id": "volunteers", "label": "志愿者", "value": 4, "suffix": "" }
+]

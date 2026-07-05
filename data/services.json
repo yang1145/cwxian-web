@@ -1,0 +1,60 @@
+{
+  "domain": {
+    "id": "domain",
+    "title": "免费二级域名",
+    "description": "为符合条件的创业项目提供 *.cwxian.com 二级域名，助你以零成本建立品牌线上入口。",
+    "icon": "Globe",
+    "features": [
+      "免费使用 *.cwxian.com 二级域名",
+      "支持自定义前缀",
+      "支持 A / CNAME / TXT 等解析记录",
+      "每个项目可申请 1 个主域名",
+      "与项目活跃度挂钩的续期机制"
+    ],
+    "specs": [
+      { "label": "域名格式", "value": "yourname.cwxian.com" },
+      { "label": "解析记录", "value": "A / CNAME / TXT" },
+      { "label": "申请数量", "value": "每个项目 1 个（特殊情况可申请额外）" },
+      { "label": "有效期", "value": "与项目活跃度挂钩" },
+      { "label": "费用", "value": "完全免费" }
+    ],
+    "restrictions": [
+      "禁止注册涉及侵权、违法、敏感词汇的域名前缀",
+      "禁止用于钓鱼、诈骗、色情、赌博等违法违规用途",
+      "长期不使用或项目终止的域名可能被回收"
+    ],
+    "cta": {
+      "text": "前往注册域名",
+      "href": "https://dns.cwxian.com"
+    }
+  },
+  "hosting": {
+    "id": "hosting",
+    "title": "免费托管空间",
+    "description": "为创业项目提供基础网站托管空间，支持静态网站与有限动态脚本，让你快速上线产品展示页。",
+    "icon": "Server",
+    "features": [
+      "免费静态网站托管",
+      "支持 Web 界面上传与 Git 同步",
+      "固定存储空间与月流量额度",
+      "基础访问统计",
+      "快速开通，即时生效"
+    ],
+    "specs": [
+      { "label": "支持类型", "value": "静态网站 / 有限动态脚本" },
+      { "label": "上传方式", "value": "Web 上传 / Git 同步" },
+      { "label": "存储空间", "value": "每个项目固定额度" },
+      { "label": "月流量", "value": "固定额度" },
+      { "label": "费用", "value": "完全免费" }
+    ],
+    "restrictions": [
+      "禁止用于文件存储站、下载站、网盘等用途",
+      "禁止用于挖矿、代理、博彩、色情、诈骗等违法违规用途",
+      "超出资源限制需优化或申请升级"
+    ],
+    "cta": {
+      "text": "前往开通空间",
+      "href": "https://free-host.cwxian.com"
+    }
+  }
+}
