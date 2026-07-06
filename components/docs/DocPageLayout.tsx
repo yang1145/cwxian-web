@@ -26,7 +26,7 @@ export async function DocPageLayout({ slug, description }: DocPageLayoutProps) {
               </div>
             </div>
             <div className="lg:col-span-3">
-              <DocContent title={title} content={content} />
+              <DocContent title="" content={content} />
             </div>
           </div>
         </Container>

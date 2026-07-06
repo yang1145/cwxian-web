@@ -1,9 +1,13 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
-import remarkHtml from "remark-html";
+import remarkRehype from "remark-rehype";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeStringify from "rehype-stringify";
 
 const contentDirectory = join(process.cwd(), "content");
 
@@ -19,9 +23,25 @@ export async function getMarkdownContent(
   const fileContents = readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processedContent = await remark()
+  const processedContent = await unified()
+    .use(remarkParse)
     .use(remarkGfm)
-    .use(remarkHtml)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeSlug)
+    .use(rehypeAutolinkHeadings, {
+      behavior: "append",
+      properties: {
+        className: ["heading-anchor"],
+        ariaLabel: "链接到此标题",
+      },
+      content: {
+        type: "element",
+        tagName: "span",
+        properties: { className: ["anchor-icon"], ariaHidden: true },
+        children: [{ type: "text", value: "#" }],
+      },
+    })
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content);
 
   return {
