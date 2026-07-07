@@ -20,7 +20,7 @@
   {
     "id": "4",
     "question": "域名和空间可以在主站直接申请吗？",
-    "answer": "主站负责展示规则与引导。实际注册与开通需要前往 user.cwxian.com（域名）或 user.cwxian.com（空间）完成。",
+    "answer": "主站负责展示规则与引导。实际注册与开通需要前往 dns.cwxian.com（域名）或 user.cwxian.com（空间）完成。",
     "category": "开通"
   },
   {

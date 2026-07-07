@@ -17,7 +17,7 @@
     "id": "domain-guide",
     "title": "域名解析教程",
     "slug": "domain-guide",
-    "excerpt": "如何在 user.cwxian.com 添加解析记录，以及常见 DNS 问题排查。",
+    "excerpt": "如何在 dns.cwxian.com 添加解析记录，以及常见 DNS 问题排查。",
     "category": "域名"
   },
   {
@@ -31,7 +31,7 @@
     "id": "sub-sites",
     "title": "子站使用说明",
     "slug": "sub-sites",
-    "excerpt": "user.cwxian.com 与 user.cwxian.com 的功能介绍与使用说明。",
+    "excerpt": "dns.cwxian.com 与 user.cwxian.com 的功能介绍与使用说明。",
     "category": "开通"
   }
 ]

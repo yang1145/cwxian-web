@@ -89,7 +89,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
               {service.cta.text}
             </SubSiteLink>
             <SubSiteLink
-              href={service.id === "domain" ? "https://user.cwxian.com" : "https://user.cwxian.com"}
+              href={service.id === "domain" ? "https://user.cwxian.com" : "https://dns.cwxian.com"}
               variant="outline"
               size="lg"
             >

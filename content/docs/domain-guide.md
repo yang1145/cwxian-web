@@ -4,11 +4,11 @@ title: 域名解析教程
 
 ## 域名解析教程
 
-本教程介绍如何在 user.cwxian.com 管理你的二级域名解析记录，以及常见 DNS 问题的排查方法。
+本教程介绍如何在 dns.cwxian.com 管理你的二级域名解析记录，以及常见 DNS 问题的排查方法。
 
 ### 登录子站
 
-审核通过后，使用申请时填写的邮箱或账号登录 [user.cwxian.com](https://user.cwxian.com)。
+审核通过后，使用申请时填写的邮箱或账号登录 [dns.cwxian.com](https://dns.cwxian.com)。
 
 ### 添加解析记录
 

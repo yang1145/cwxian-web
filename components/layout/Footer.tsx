@@ -51,7 +51,7 @@ export function Footer() {
               </p>
               <div className="mt-6 flex flex-col gap-2 sm:flex-row">
                 <SubSiteLink
-                  href="https://user.cwxian.com"
+                  href="https://dns.cwxian.com"
                   variant="outline"
                   className="border-neutral-600 bg-transparent text-neutral-200 hover:bg-neutral-800 hover:text-white"
                 >

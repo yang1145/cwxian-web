@@ -64,7 +64,7 @@ export function Header() {
 
           <div className="hidden lg:flex lg:items-center lg:gap-3">
             <SubSiteLink
-              href="https://user.cwxian.com"
+              href="https://dns.cwxian.com"
               variant="outline"
               size="sm"
             >

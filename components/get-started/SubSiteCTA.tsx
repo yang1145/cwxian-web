@@ -21,7 +21,7 @@ export function SubSiteCTA({
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <SubSiteLink
-              href="https://user.cwxian.com"
+              href="https://dns.cwxian.com"
               size="lg"
               className="bg-white text-primary-700 hover:bg-primary-50"
               showIcon
