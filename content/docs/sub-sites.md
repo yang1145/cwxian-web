@@ -22,6 +22,13 @@ title: 子站使用说明
 - 管理已注册域名的解析记录；
 - 查看域名状态与有效期。
 
+#### 申请流程
+
+1. 在 [dns.cwxian.com](https://dns.cwxian.com) 注册一个平台账号；
+2. 使用注册邮箱向 domain_apply@cwxian.com 发送申请邮件；
+3. 邮件主题格式：`【域名申请】项目名 - 前缀.cwxian.com`；
+4. 邮件正文需包含：项目名、面向领域、项目优势、项目简介、注册的 dns.cwxian.com 账号、期望域名前缀。
+
 #### 使用前准备
 
 1. 在主站阅读 [域名服务介绍](/services/domain/) 与 [域名开通指引](/get-started/domain/)；

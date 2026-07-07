@@ -51,7 +51,7 @@ export default async function DomainGuidePage() {
     <>
       <PageHeader
         title="域名开通指引"
-        description="按照以下步骤，在充分了解规则后前往 dns.cwxian.com 注册你的免费二级域名。"
+        description="按照以下步骤申请免费二级域名：先在 dns.cwxian.com 注册账号，再向 domain_apply@cwxian.com 发送申请邮件。"
       />
 
       <section className="section-padding bg-white">
@@ -60,7 +60,7 @@ export default async function DomainGuidePage() {
             <Alert variant="warning" className="mb-10">
               <AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
               <p>
-                本页仅展示域名服务规则与说明。实际注册请前往{" "}
+                本页仅展示域名服务规则与说明。实际申请请先前往{" "}
                 <a
                   href="https://dns.cwxian.com"
                   target="_blank"
@@ -69,7 +69,7 @@ export default async function DomainGuidePage() {
                 >
                   dns.cwxian.com
                 </a>
-                完成。
+                {" "}注册账号，再向 domain_apply@cwxian.com 发送申请邮件。邮件主题请注明「【域名申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 dns.cwxian.com 账号、期望域名前缀。
               </p>
             </Alert>
 
@@ -159,7 +159,12 @@ export default async function DomainGuidePage() {
           <div className="mx-auto max-w-3xl text-center">
             <Globe className="mx-auto h-12 w-12 text-white/80" aria-hidden="true" />
             <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">准备好注册域名了吗？</h2>
-            <p className="mt-3 text-primary-100">确认已了解命名规范与使用限制后，前往 dns.cwxian.com 提交申请。</p>
+            <p className="mt-3 text-primary-100">
+              确认已了解命名规范与使用限制后，请先前往 dns.cwxian.com 注册账号，再发送申请邮件至 domain_apply@cwxian.com。
+            </p>
+            <p className="mt-3 text-primary-100">
+              邮件主题：「【域名申请】项目名 - 前缀.cwxian.com」；正文需包含项目名、面向领域、项目优势、项目简介、注册的 dns.cwxian.com 账号、期望域名前缀。
+            </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SubSiteLink
                 href="https://dns.cwxian.com"

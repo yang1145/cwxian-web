@@ -29,19 +29,33 @@ export function ServiceCard({ service }: ServiceCardProps) {
 
           <Alert className="mt-8" variant="info">
             <AlertTriangle className="h-4 w-4" aria-hidden="true" />
-            <p>
-              本页仅展示服务规则与说明。实际{service.id === "domain" ? "注册" : "开通"}{" "}
-              请前往{" "}
-              <a
-                href={service.cta.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium underline"
-              >
-                {service.cta.href.replace("https://", "")}
-              </a>
-              完成。
-            </p>
+            {service.id === "domain" ? (
+              <p>
+                本页仅展示服务规则与说明。实际注册请前往{" "}
+                <a
+                  href={service.cta.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium underline"
+                >
+                  {service.cta.href.replace("https://", "")}
+                </a>
+                {" "}注册账号，并向 domain_apply@cwxian.com 发送申请邮件完成。邮件主题请注明「【域名申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 dns.cwxian.com 账号、期望域名前缀。
+              </p>
+            ) : (
+              <p>
+                本页仅展示服务规则与说明。实际开通请前往{" "}
+                <a
+                  href={service.cta.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium underline"
+                >
+                  {service.cta.href.replace("https://", "")}
+                </a>
+                完成。
+              </p>
+            )}
           </Alert>
 
           <div className="mt-10 grid gap-8 md:grid-cols-2">
