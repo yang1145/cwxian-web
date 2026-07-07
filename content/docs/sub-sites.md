@@ -44,6 +44,13 @@ title: 子站使用说明
 - 配置 Git 同步部署；
 - 查看空间使用情况。
 
+#### 申请流程
+
+1. 在 [user.cwxian.com](https://user.cwxian.com) 注册一个平台账号；
+2. 使用注册邮箱向 vhost_apply@cwxian.com 发送申请邮件；
+3. 邮件主题格式：`【空间申请】项目名 - 前缀.cwxian.com`；
+4. 邮件正文需包含：项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。
+
 #### 使用前准备
 
 1. 在主站阅读 [空间服务介绍](/services/hosting/) 与 [空间开通指引](/get-started/hosting/)；

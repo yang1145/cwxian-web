@@ -48,7 +48,7 @@ title: 新手指南
 根据你选择的服务，按以下方式提交申请：
 
 - **免费二级域名**：先前往 [dns.cwxian.com](https://dns.cwxian.com) 注册账号，再向 domain_apply@cwxian.com 发送申请邮件。邮件主题请注明「【域名申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 dns.cwxian.com 账号、期望域名前缀。
-- **免费托管空间**：点击页面中的子站跳转按钮，前往 user.cwxian.com 填写信息并提交申请。
+- **免费托管空间**：先前往 [user.cwxian.com](https://user.cwxian.com) 注册账号，再向 vhost_apply@cwxian.com 发送申请邮件。邮件主题请注明「【空间申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。
 
 ### 6. 等待审核并上线
 

@@ -12,7 +12,7 @@ const steps = [
   {
     icon: MousePointer,
     title: "点击跳转",
-    description: "前往 dns.cwxian.com 或 user.cwxian.com",
+    description: "在对应子站注册账号并发送申请邮件",
   },
   {
     icon: FileCheck,

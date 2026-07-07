@@ -53,7 +53,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
                 >
                   {service.cta.href.replace("https://", "")}
                 </a>
-                完成。
+                {" "}注册账号，并向 vhost_apply@cwxian.com 发送申请邮件完成。邮件主题请注明「【空间申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。
               </p>
             )}
           </Alert>

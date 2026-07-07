@@ -50,7 +50,7 @@ export default async function HostingGuidePage() {
     <>
       <PageHeader
         title="空间开通指引"
-        description="按照以下步骤，在充分了解规则后前往 user.cwxian.com 开通你的免费托管空间。"
+        description="按照以下步骤申请免费托管空间：先在 user.cwxian.com 注册账号，再向 vhost_apply@cwxian.com 发送申请邮件。"
       />
 
       <section className="section-padding bg-white">
@@ -59,7 +59,7 @@ export default async function HostingGuidePage() {
             <Alert variant="warning" className="mb-10">
               <AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
               <p>
-                本页仅展示空间服务规则与说明。实际开通请前往{" "}
+                本页仅展示空间服务规则与说明。实际申请请先前往{" "}
                 <a
                   href="https://user.cwxian.com"
                   target="_blank"
@@ -68,7 +68,7 @@ export default async function HostingGuidePage() {
                 >
                   user.cwxian.com
                 </a>
-                完成。
+                {" "}注册账号，再向 vhost_apply@cwxian.com 发送申请邮件。邮件主题请注明「【空间申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。
               </p>
             </Alert>
 
@@ -150,7 +150,12 @@ export default async function HostingGuidePage() {
           <div className="mx-auto max-w-3xl text-center">
             <Server className="mx-auto h-12 w-12 text-white/80" aria-hidden="true" />
             <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">准备好开通空间了吗？</h2>
-            <p className="mt-3 text-cyan-100">确认已了解使用规范与限制后，前往 user.cwxian.com 提交申请。</p>
+            <p className="mt-3 text-cyan-100">
+              确认已了解使用规范与限制后，请先前往 user.cwxian.com 注册账号，再发送申请邮件至 vhost_apply@cwxian.com。
+            </p>
+            <p className="mt-3 text-cyan-100">
+              邮件主题：「【空间申请】项目名 - 前缀.cwxian.com」；正文需包含项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。
+            </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SubSiteLink
                 href="https://user.cwxian.com"

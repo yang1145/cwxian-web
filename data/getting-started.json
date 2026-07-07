@@ -48,13 +48,13 @@
     },
     {
       "step": 2,
-      "title": "前往子站",
-      "description": "点击「前往开通空间」按钮，跳转至 user.cwxian.com。"
+      "title": "注册账号",
+      "description": "前往 user.cwxian.com 注册一个平台账号，该账号将用于后续空间管理与审核通知。"
     },
     {
       "step": 3,
-      "title": "填写信息",
-      "description": "在子站填写项目信息、空间用途与联系方式。"
+      "title": "发送申请邮件",
+      "description": "使用注册邮箱发送邮件至 vhost_apply@cwxian.com，邮件主题为「【空间申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。"
     },
     {
       "step": 4,
@@ -64,12 +64,12 @@
     {
       "step": 5,
       "title": "上传网站",
-      "description": "审核通过后，通过 Web 上传或 Git 同步部署你的网站文件。"
+      "description": "审核通过后，登录 user.cwxian.com 通过 Web 上传或 Git 同步部署你的网站文件。"
     }
   ],
   "tips": [
     "子站仅提供基础功能，请先在主站充分了解规则再跳转",
-    "申请域名前请确保已在 dns.cwxian.com 注册账号，并使用该账号邮箱发送申请邮件",
+    "申请域名前请确保已在 dns.cwxian.com 注册账号，申请空间前请确保已在 user.cwxian.com 注册账号，并使用对应账号邮箱发送申请邮件",
     "邮件主题与正文信息务必完整、真实，缺失关键信息可能导致审核延迟",
     "建议同时申请域名和空间，便于完整搭建项目官网",
     "审核期间请留意邮箱，可能需要补充材料"
