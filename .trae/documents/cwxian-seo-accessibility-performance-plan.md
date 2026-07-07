@@ -49,7 +49,7 @@
 
 - 主站无后端，所有数据为静态 JSON/Markdown。
 - 部署方式为静态导出（`output: 'export'`）。
-- 子站 `dns.cwxian.com` 与 `free-host.cwxian.com` 不在本仓库范围内，sitemap 仅包含主站页面。
+- 子站 `user.cwxian.com` 与 `user.cwxian.com` 不在本仓库范围内，sitemap 仅包含主站页面。
 - 需要保持现有设计风格（现代极简科技风，primary-600 为主色）。
 
 ---
@@ -208,7 +208,7 @@
 - `dist/manifest.webmanifest` 存在
 - `dist/opengraph-image.jpg`（或 `.png`）存在
 - 所有页面路由对应的 `index.html` 存在
-- 子站跳转链接指向 `https://dns.cwxian.com` 与 `https://free-host.cwxian.com`
+- 子站跳转链接指向 `https://user.cwxian.com` 与 `https://user.cwxian.com`
 
 #### 4.3 链接与可访问性快速检查
 

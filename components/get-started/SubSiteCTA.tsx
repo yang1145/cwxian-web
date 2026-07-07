@@ -21,7 +21,7 @@ export function SubSiteCTA({
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <SubSiteLink
-              href="https://dns.cwxian.com"
+              href="https://user.cwxian.com"
               size="lg"
               className="bg-white text-primary-700 hover:bg-primary-50"
               showIcon
@@ -29,7 +29,7 @@ export function SubSiteCTA({
               前往注册域名
             </SubSiteLink>
             <SubSiteLink
-              href="https://free-host.cwxian.com"
+              href="https://user.cwxian.com"
               variant="outline"
               size="lg"
               className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"

@@ -4,7 +4,7 @@ title: 空间上传教程
 
 ## 空间上传教程
 
-本教程介绍如何在 free-host.cwxian.com 上传或同步网站文件，让你的项目快速上线。
+本教程介绍如何在 user.cwxian.com 上传或同步网站文件，让你的项目快速上线。
 
 ### 支持的网站类型
 
@@ -16,7 +16,7 @@ title: 空间上传教程
 
 ### 通过 Web 界面上传
 
-1. 登录 [free-host.cwxian.com](https://free-host.cwxian.com)；
+1. 登录 [user.cwxian.com](https://user.cwxian.com)；
 2. 进入文件管理器；
 3. 选择或拖拽网站文件到上传区域；
 4. 等待上传完成，访问分配的域名查看效果。

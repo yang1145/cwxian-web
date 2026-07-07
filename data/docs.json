@@ -17,21 +17,21 @@
     "id": "domain-guide",
     "title": "域名解析教程",
     "slug": "domain-guide",
-    "excerpt": "如何在 dns.cwxian.com 添加解析记录，以及常见 DNS 问题排查。",
+    "excerpt": "如何在 user.cwxian.com 添加解析记录，以及常见 DNS 问题排查。",
     "category": "域名"
   },
   {
     "id": "hosting-guide",
     "title": "空间上传教程",
     "slug": "hosting-guide",
-    "excerpt": "在 free-host.cwxian.com 通过 Web 上传、Git 同步部署网站文件。",
+    "excerpt": "在 user.cwxian.com 通过 Web 上传、Git 同步部署网站文件。",
     "category": "空间"
   },
   {
     "id": "sub-sites",
     "title": "子站使用说明",
     "slug": "sub-sites",
-    "excerpt": "dns.cwxian.com 与 free-host.cwxian.com 的功能介绍与使用说明。",
+    "excerpt": "user.cwxian.com 与 user.cwxian.com 的功能介绍与使用说明。",
     "category": "开通"
   }
 ]

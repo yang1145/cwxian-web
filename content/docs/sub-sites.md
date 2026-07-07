@@ -11,10 +11,10 @@ title: 子站使用说明
 | 站点 | 域名 | 功能 |
 |------|------|------|
 | 主站 | cwxian.com | 品牌展示、规则说明、使用教程、跳转引导 |
-| 域名服务子站 | dns.cwxian.com | 二级域名注册、解析记录管理 |
-| 空间服务子站 | free-host.cwxian.com | 免费空间开通、文件上传与管理 |
+| 域名服务子站 | user.cwxian.com | 二级域名注册、解析记录管理 |
+| 空间服务子站 | user.cwxian.com | 免费空间开通、文件上传与管理 |
 
-### dns.cwxian.com
+### user.cwxian.com
 
 域名服务子站提供以下基础功能：
 
@@ -28,7 +28,7 @@ title: 子站使用说明
 2. 确认你的项目符合 [审核标准](/get-started/eligibility/)；
 3. 准备好期望的域名前缀与项目信息。
 
-### free-host.cwxian.com
+### user.cwxian.com
 
 空间服务子站提供以下基础功能：
 

@@ -192,4 +192,8 @@
   .animation-blob-delayed {
     animation: none;
   }
+
+  .hero-from\:opacity-0 {
+    opacity: 1;
+  }
 }

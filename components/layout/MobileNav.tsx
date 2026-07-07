@@ -31,14 +31,14 @@ export function MobileNav({ isOpen, onClose, items }: MobileNavProps) {
         ))}
         <div className="mt-4 flex flex-col gap-2 border-t border-neutral-100 pt-4">
           <SubSiteLink
-            href="https://dns.cwxian.com"
+            href="https://user.cwxian.com"
             variant="outline"
             className="justify-center"
           >
             域名服务
           </SubSiteLink>
           <SubSiteLink
-            href="https://free-host.cwxian.com"
+            href="https://user.cwxian.com"
             variant="primary"
             className="justify-center"
           >

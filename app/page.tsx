@@ -7,6 +7,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { Partners } from "@/components/sections/Partners";
 import { FAQPreview } from "@/components/sections/FAQPreview";
 import { BottomCTA } from "@/components/sections/BottomCTA";
+import { ScrollReveal } from "@/components/animations/ScrollReveal";
 import {
   getStats,
   getServices,
@@ -29,14 +30,30 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <Stats stats={stats} />
-      <ServiceOverview services={services} />
-      <GettingStartedSteps />
-      <ShowcasePreview showcases={showcases} />
-      <Testimonials testimonials={testimonials} />
-      <Partners partners={partners} />
-      <FAQPreview faq={faq} />
-      <BottomCTA />
+      <ScrollReveal as="section">
+        <Stats stats={stats} />
+      </ScrollReveal>
+      <ScrollReveal as="section">
+        <ServiceOverview services={services} />
+      </ScrollReveal>
+      <ScrollReveal as="section" stagger={0.15}>
+        <GettingStartedSteps />
+      </ScrollReveal>
+      <ScrollReveal as="section" stagger={0.1}>
+        <ShowcasePreview showcases={showcases} />
+      </ScrollReveal>
+      <ScrollReveal as="section" stagger={0.1}>
+        <Testimonials testimonials={testimonials} />
+      </ScrollReveal>
+      <ScrollReveal as="section" delay={0.1}>
+        <Partners partners={partners} />
+      </ScrollReveal>
+      <ScrollReveal as="section" stagger={0.1}>
+        <FAQPreview faq={faq} />
+      </ScrollReveal>
+      <ScrollReveal as="section" direction="none">
+        <BottomCTA />
+      </ScrollReveal>
     </>
   );
 }

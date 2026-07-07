@@ -51,14 +51,14 @@ export function Footer() {
               </p>
               <div className="mt-6 flex flex-col gap-2 sm:flex-row">
                 <SubSiteLink
-                  href="https://dns.cwxian.com"
+                  href="https://user.cwxian.com"
                   variant="outline"
                   className="border-neutral-600 bg-transparent text-neutral-200 hover:bg-neutral-800 hover:text-white"
                 >
                   域名服务
                 </SubSiteLink>
                 <SubSiteLink
-                  href="https://free-host.cwxian.com"
+                  href="https://user.cwxian.com"
                   variant="primary"
                 >
                   开通空间

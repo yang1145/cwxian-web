@@ -64,14 +64,14 @@ export function Header() {
 
           <div className="hidden lg:flex lg:items-center lg:gap-3">
             <SubSiteLink
-              href="https://dns.cwxian.com"
+              href="https://user.cwxian.com"
               variant="outline"
               size="sm"
             >
               域名服务
             </SubSiteLink>
             <SubSiteLink
-              href="https://free-host.cwxian.com"
+              href="https://user.cwxian.com"
               variant="primary"
               size="sm"
             >

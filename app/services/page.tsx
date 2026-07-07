@@ -95,8 +95,8 @@ export default async function ServicesPage() {
                 <tbody className="divide-y divide-neutral-200">
                   <tr>
                     <td className="px-6 py-4 font-medium text-neutral-900">服务入口</td>
-                    <td className="px-6 py-4 text-neutral-600">dns.cwxian.com</td>
-                    <td className="px-6 py-4 text-neutral-600">free-host.cwxian.com</td>
+                    <td className="px-6 py-4 text-neutral-600">user.cwxian.com</td>
+                    <td className="px-6 py-4 text-neutral-600">user.cwxian.com</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 font-medium text-neutral-900">核心能力</td>

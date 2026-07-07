@@ -50,7 +50,7 @@ export default async function HostingGuidePage() {
     <>
       <PageHeader
         title="空间开通指引"
-        description="按照以下步骤，在充分了解规则后前往 free-host.cwxian.com 开通你的免费托管空间。"
+        description="按照以下步骤，在充分了解规则后前往 user.cwxian.com 开通你的免费托管空间。"
       />
 
       <section className="section-padding bg-white">
@@ -61,12 +61,12 @@ export default async function HostingGuidePage() {
               <p>
                 本页仅展示空间服务规则与说明。实际开通请前往{" "}
                 <a
-                  href="https://free-host.cwxian.com"
+                  href="https://user.cwxian.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium underline"
                 >
-                  free-host.cwxian.com
+                  user.cwxian.com
                 </a>
                 完成。
               </p>
@@ -150,10 +150,10 @@ export default async function HostingGuidePage() {
           <div className="mx-auto max-w-3xl text-center">
             <Server className="mx-auto h-12 w-12 text-white/80" aria-hidden="true" />
             <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">准备好开通空间了吗？</h2>
-            <p className="mt-3 text-cyan-100">确认已了解使用规范与限制后，前往 free-host.cwxian.com 提交申请。</p>
+            <p className="mt-3 text-cyan-100">确认已了解使用规范与限制后，前往 user.cwxian.com 提交申请。</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SubSiteLink
-                href="https://free-host.cwxian.com"
+                href="https://user.cwxian.com"
                 size="lg"
                 className="bg-white text-accent-700 hover:bg-cyan-50"
                 showIcon

@@ -51,7 +51,7 @@ export default async function DomainGuidePage() {
     <>
       <PageHeader
         title="域名开通指引"
-        description="按照以下步骤，在充分了解规则后前往 dns.cwxian.com 注册你的免费二级域名。"
+        description="按照以下步骤，在充分了解规则后前往 user.cwxian.com 注册你的免费二级域名。"
       />
 
       <section className="section-padding bg-white">
@@ -62,12 +62,12 @@ export default async function DomainGuidePage() {
               <p>
                 本页仅展示域名服务规则与说明。实际注册请前往{" "}
                 <a
-                  href="https://dns.cwxian.com"
+                  href="https://user.cwxian.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium underline"
                 >
-                  dns.cwxian.com
+                  user.cwxian.com
                 </a>
                 完成。
               </p>
@@ -159,10 +159,10 @@ export default async function DomainGuidePage() {
           <div className="mx-auto max-w-3xl text-center">
             <Globe className="mx-auto h-12 w-12 text-white/80" aria-hidden="true" />
             <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">准备好注册域名了吗？</h2>
-            <p className="mt-3 text-primary-100">确认已了解命名规范与使用限制后，前往 dns.cwxian.com 提交申请。</p>
+            <p className="mt-3 text-primary-100">确认已了解命名规范与使用限制后，前往 user.cwxian.com 提交申请。</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <SubSiteLink
-                href="https://dns.cwxian.com"
+                href="https://user.cwxian.com"
                 size="lg"
                 className="bg-white text-primary-700 hover:bg-primary-50"
                 showIcon

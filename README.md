@@ -2,7 +2,7 @@
 
 创无限（cwxian.com）是一个面向早期创业项目与个人开发者的公益性互联网基础资源服务平台，为符合条件的项目提供免费的 `*.cwxian.com` 二级域名与托管空间。本项目为创无限的主站官网，采用纯前端静态站点架构，负责品牌展示、服务规则、开通指引、帮助文档、协议政策与跳转引导。
 
-实际的域名注册与解析管理请前往 [dns.cwxian.com](https://dns.cwxian.com)，免费空间开通与管理请前往 [free-host.cwxian.com](https://free-host.cwxian.com)。
+实际的域名注册与解析管理请前往 [user.cwxian.com](https://user.cwxian.com)，免费空间开通与管理请前往 [user.cwxian.com](https://user.cwxian.com)。
 
 ---
 

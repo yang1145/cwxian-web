@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SkipLink } from "@/components/layout/SkipLink";
+import { GSAPProvider } from "@/components/animations/GSAPProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -54,12 +55,14 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
-        <SkipLink />
-        <Header />
-        <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
-          {children}
-        </main>
-        <Footer />
+        <GSAPProvider>
+          <SkipLink />
+          <Header />
+          <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
+            {children}
+          </main>
+          <Footer />
+        </GSAPProvider>
       </body>
     </html>
   );
