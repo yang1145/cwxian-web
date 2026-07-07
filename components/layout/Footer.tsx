@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "./Container";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
+import { Button } from "@/components/ui/Button";
 import { Globe, Heart } from "lucide-react";
 
 const footerLinks = {
@@ -50,19 +50,16 @@ export function Footer() {
                 让每一个有价值的创业想法，都能以最低成本拥有一个专业的线上起点。
               </p>
               <div className="mt-6 flex flex-col gap-2 sm:flex-row">
-                <SubSiteLink
-                  href="https://dns.cwxian.com"
+                <Button asChild variant="primary">
+                  <Link href="/get-started/domain/">注册域名</Link>
+                </Button>
+                <Button
+                  asChild
                   variant="outline"
                   className="border-neutral-600 bg-transparent text-neutral-200 hover:bg-neutral-800 hover:text-white"
                 >
-                  域名服务
-                </SubSiteLink>
-                <SubSiteLink
-                  href="https://user.cwxian.com"
-                  variant="primary"
-                >
-                  开通空间
-                </SubSiteLink>
+                  <Link href="/get-started/hosting/">开通空间</Link>
+                </Button>
               </div>
             </div>
 

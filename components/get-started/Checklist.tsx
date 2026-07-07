@@ -1,15 +1,19 @@
 "use client";
 
+import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Check } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { Check, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 interface ChecklistProps {
   items: string[];
   className?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
 }
 
-export function Checklist({ items, className }: ChecklistProps) {
+export function Checklist({ items, className, ctaHref, ctaLabel }: ChecklistProps) {
   const [checkedItems, setCheckedItems] = useState<Set<number>>(new Set());
 
   const toggleItem = (index: number) => {
@@ -81,9 +85,19 @@ export function Checklist({ items, className }: ChecklistProps) {
       </ul>
 
       {allChecked ? (
-        <p className="mt-4 rounded-xl bg-green-50 p-4 text-sm text-green-800">
-          太棒了！你已确认符合基本申请条件，可以继续阅读下方的开通指引。
-        </p>
+        <div className="mt-4 space-y-3">
+          <p className="rounded-xl bg-green-50 p-4 text-sm text-green-800">
+            太棒了！你已确认符合基本申请条件，可直接前往注册域名。
+          </p>
+          {ctaHref ? (
+            <Button asChild className="w-full">
+              <Link href={ctaHref}>
+                {ctaLabel ?? "前往注册"}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </Button>
+          ) : null}
+        </div>
       ) : null}
     </div>
   );

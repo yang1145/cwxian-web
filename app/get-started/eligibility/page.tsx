@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
+import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Check, X, Star, ArrowRight, Mail } from "lucide-react";
 import { getEligibility } from "@/lib/data";
@@ -214,23 +214,17 @@ export default async function EligibilityPage() {
             <h2 className="text-2xl font-bold text-white sm:text-3xl">符合申请条件？</h2>
             <p className="mt-3 text-primary-100">确认符合条件后，前往对应子站提交申请。</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <SubSiteLink
-                href="https://dns.cwxian.com"
-                size="lg"
-                className="bg-white text-primary-700 hover:bg-primary-50"
-                showIcon
-              >
-                前往注册域名
-              </SubSiteLink>
-              <SubSiteLink
-                href="https://user.cwxian.com"
+              <Button asChild size="lg" className="bg-white text-primary-700 hover:bg-primary-50">
+                <Link href="/get-started/domain/">注册域名</Link>
+              </Button>
+              <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
-                showIcon
               >
-                前往开通空间
-              </SubSiteLink>
+                <Link href="/get-started/hosting/">开通空间</Link>
+              </Button>
             </div>
             <Link
               href="/get-started/"

@@ -6,7 +6,7 @@ import { SectionHeader } from "@/components/shared/SectionHeader";
 import { SubSiteLink } from "@/components/shared/SubSiteLink";
 import { Alert } from "@/components/ui/Alert";
 import { Accordion } from "@/components/ui/Accordion";
-import { ArrowLeft, ArrowRight, Globe, AlertTriangle, Check } from "lucide-react";
+import { ArrowLeft, Globe, AlertTriangle, Check } from "lucide-react";
 import { getGettingStarted, getFAQ, getEligibility } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -174,13 +174,6 @@ export default async function DomainGuidePage() {
               >
                 前往注册域名
               </SubSiteLink>
-              <Link
-                href="/get-started/hosting/"
-                className="inline-flex items-center gap-2 rounded-lg border border-primary-400/50 px-6 py-3 text-sm font-medium text-white hover:bg-primary-800"
-              >
-                查看空间开通指引
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
             </div>
             <Link
               href="/get-started/"

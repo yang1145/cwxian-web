@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 export function BottomCTA() {
@@ -33,19 +32,19 @@ export function BottomCTA() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg" className="bg-white text-primary-700 hover:bg-primary-50">
-              <Link href="/get-started/">
-                立即开通
+              <Link href="/get-started/domain/">
+                注册域名
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
-            <SubSiteLink
-              href="https://user.cwxian.com"
+            <Button
+              asChild
               variant="outline"
               size="lg"
               className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
             >
-              直接开通空间
-            </SubSiteLink>
+              <Link href="/get-started/hosting/">开通空间</Link>
+            </Button>
           </div>
         </div>
       </Container>

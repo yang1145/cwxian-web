@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
+import { Button } from "@/components/ui/Button";
 import { Globe, Server, ArrowRight } from "lucide-react";
 import type { Service } from "@/types";
 
@@ -51,12 +51,12 @@ export function ServiceOverview({ services }: ServiceOverviewProps) {
               </ul>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <SubSiteLink
-                  href={service.cta.href}
-                  variant={service.id === "domain" ? "outline" : "primary"}
+                <Button
+                  asChild
+                  variant={service.id === "domain" ? "primary" : "outline"}
                 >
-                  {service.cta.text}
-                </SubSiteLink>
+                  <Link href={service.cta.href}>{service.cta.text}</Link>
+                </Button>
                 <Link
                   href={`/services/${service.id}/`}
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700"

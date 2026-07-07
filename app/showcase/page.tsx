@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/shared/PageHeader";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
+import { Button } from "@/components/ui/Button";
 import { ShowcaseFilterSkeleton } from "@/components/showcase/ShowcaseFilterSkeleton";
 import { getShowcases } from "@/lib/data";
 
@@ -49,15 +49,14 @@ export default async function ShowcasePage() {
               >
                 了解开通流程
               </Link>
-              <SubSiteLink
-                href="https://dns.cwxian.com"
+              <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
-                showIcon
               >
-                前往注册域名
-              </SubSiteLink>
+                <Link href="/get-started/domain/">注册域名</Link>
+              </Button>
             </div>
           </div>
         </Container>

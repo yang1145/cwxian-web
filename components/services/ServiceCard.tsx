@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
 import { Alert } from "@/components/ui/Alert";
+import { Button } from "@/components/ui/Button";
 import { Globe, Server, Check, X, AlertTriangle } from "lucide-react";
 import type { Service } from "@/types";
 
@@ -29,33 +30,15 @@ export function ServiceCard({ service }: ServiceCardProps) {
 
           <Alert className="mt-8" variant="info">
             <AlertTriangle className="h-4 w-4" aria-hidden="true" />
-            {service.id === "domain" ? (
-              <p>
-                本页仅展示服务规则与说明。实际注册请前往{" "}
-                <a
-                  href={service.cta.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium underline"
-                >
-                  {service.cta.href.replace("https://", "")}
-                </a>
-                {" "}注册账号，并向 domain_apply@cwxian.com 发送申请邮件完成。邮件主题请注明「【域名申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 dns.cwxian.com 账号、期望域名前缀。
-              </p>
-            ) : (
-              <p>
-                本页仅展示服务规则与说明。实际开通请前往{" "}
-                <a
-                  href={service.cta.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium underline"
-                >
-                  {service.cta.href.replace("https://", "")}
-                </a>
-                {" "}注册账号，并向 vhost_apply@cwxian.com 发送申请邮件完成。邮件主题请注明「【空间申请】项目名 - 前缀.cwxian.com」，正文需包含项目名、面向领域、项目优势、项目简介、注册的 user.cwxian.com 账号、期望绑定的域名/空间标识。
-              </p>
-            )}
+            <p>
+              本页仅展示服务规格与使用限制。完整申请流程请查看
+              {" "}
+              <Link href={service.cta.href} className="font-medium underline">
+                开通指引
+              </Link>
+              {" "}
+              后再前往子站完成注册。
+            </p>
           </Alert>
 
           <div className="mt-10 grid gap-8 md:grid-cols-2">
@@ -99,16 +82,13 @@ export function ServiceCard({ service }: ServiceCardProps) {
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <SubSiteLink href={service.cta.href} size="lg">
-              {service.cta.text}
-            </SubSiteLink>
-            <SubSiteLink
-              href={service.id === "domain" ? "https://user.cwxian.com" : "https://dns.cwxian.com"}
-              variant="outline"
+            <Button
+              asChild
+              variant={service.id === "domain" ? "primary" : "outline"}
               size="lg"
             >
-              {service.id === "domain" ? "开通托管空间" : "注册二级域名"}
-            </SubSiteLink>
+              <Link href={service.cta.href}>{service.cta.text}</Link>
+            </Button>
           </div>
         </div>
       </Container>

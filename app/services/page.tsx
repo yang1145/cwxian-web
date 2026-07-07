@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
+import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Check, X, ArrowRight, Globe, Server, Shield, AlertTriangle } from "lucide-react";
 import { getServices, getEligibility } from "@/lib/data";
@@ -56,9 +56,13 @@ export default async function ServicesPage() {
                       ))}
                     </ul>
                     <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                      <SubSiteLink href={service.cta.href} size="md" showIcon>
-                        {service.cta.text}
-                      </SubSiteLink>
+                      <Button
+                        asChild
+                        variant={service.id === "domain" ? "primary" : "outline"}
+                        size="md"
+                      >
+                        <Link href={service.cta.href}>{service.cta.text}</Link>
+                      </Button>
                       <Link
                         href={`/services/${service.id}/`}
                         className="inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50"

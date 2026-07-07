@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/Button";
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -30,20 +29,12 @@ export function MobileNav({ isOpen, onClose, items }: MobileNavProps) {
           </Link>
         ))}
         <div className="mt-4 flex flex-col gap-2 border-t border-neutral-100 pt-4">
-          <SubSiteLink
-            href="https://dns.cwxian.com"
-            variant="outline"
-            className="justify-center"
-          >
-            域名服务
-          </SubSiteLink>
-          <SubSiteLink
-            href="https://user.cwxian.com"
-            variant="primary"
-            className="justify-center"
-          >
-            开通空间
-          </SubSiteLink>
+          <Button asChild variant="primary" className="justify-center">
+            <Link href="/get-started/domain/">注册域名</Link>
+          </Button>
+          <Button asChild variant="outline" className="justify-center">
+            <Link href="/get-started/hosting/">开通空间</Link>
+          </Button>
         </div>
       </div>
     </div>

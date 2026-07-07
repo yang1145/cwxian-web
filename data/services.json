@@ -25,7 +25,7 @@
     ],
     "cta": {
       "text": "前往注册域名",
-      "href": "https://dns.cwxian.com"
+      "href": "/get-started/domain/"
     }
   },
   "hosting": {
@@ -54,7 +54,7 @@
     ],
     "cta": {
       "text": "前往开通空间",
-      "href": "https://user.cwxian.com"
+      "href": "/get-started/hosting/"
     }
   }
 }

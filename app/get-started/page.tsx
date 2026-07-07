@@ -110,7 +110,11 @@ export default async function GetStartedPage() {
             </div>
 
             <div className="lg:col-span-1">
-              <Checklist items={gettingStarted.prerequisites} />
+              <Checklist
+                items={gettingStarted.prerequisites}
+                ctaHref="/get-started/domain/"
+                ctaLabel="注册域名"
+              />
             </div>
           </div>
         </Container>

@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Container } from "./Container";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
+import { Button } from "@/components/ui/Button";
 import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -63,20 +63,12 @@ export function Header() {
           </div>
 
           <div className="hidden lg:flex lg:items-center lg:gap-3">
-            <SubSiteLink
-              href="https://dns.cwxian.com"
-              variant="outline"
-              size="sm"
-            >
-              域名服务
-            </SubSiteLink>
-            <SubSiteLink
-              href="https://user.cwxian.com"
-              variant="primary"
-              size="sm"
-            >
-              开通空间
-            </SubSiteLink>
+            <Button asChild variant="primary" size="sm">
+              <Link href="/get-started/domain/">注册域名</Link>
+            </Button>
+            <Button asChild variant="outline" size="sm">
+              <Link href="/get-started/hosting/">开通空间</Link>
+            </Button>
           </div>
 
           <button

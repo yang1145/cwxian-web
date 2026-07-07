@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
-import { SubSiteLink } from "@/components/shared/SubSiteLink";
 import { HeroEntrance } from "@/components/animations/HeroEntrance";
 import { ArrowRight, Sparkles } from "lucide-react";
 
@@ -30,19 +29,19 @@ export function Hero() {
 
             <div className="hero-actions mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" className="bg-white text-primary-700 hover:bg-primary-50">
-                <Link href="/get-started/">
-                  立即开通
+                <Link href="/get-started/domain/">
+                  注册域名
                   <ArrowRight className="h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>
-              <SubSiteLink
-                href="https://dns.cwxian.com"
+              <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
               >
-                注册二级域名
-              </SubSiteLink>
+                <Link href="/get-started/">立即开通</Link>
+              </Button>
             </div>
 
             <p className="hero-trust mt-6 text-sm text-primary-300">
